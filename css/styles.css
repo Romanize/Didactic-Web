@@ -38,7 +38,7 @@ nav li a{
     margin-right: 10px;
 }
 
-nav li a:hover{
+nav li a:hover, nav li a:active{
     color:#ffc107;
     text-decoration: none
 }
@@ -148,7 +148,7 @@ nav li a:active{
     text-decoration: none;
 }
 
-.footer-content li a:Hover{
+.footer-content li a:hover, .footer-content li a:active{
     color:#ffc107;
 }
 
@@ -176,7 +176,7 @@ nav li a:active{
     color: #e5eaf5;
 }
 
-.footer-contact li a:hover{
+.footer-contact li a:hover, .footer-contact li a:active{
     text-decoration: ffc107;
     color:#ffc107;
 }
@@ -246,7 +246,7 @@ nav li a:active{
     color: #ffff;
 }
 
-.main-index button:hover{
+.main-index button:hover, .main-index button:active{
     background-color:#ff77a9;
     color: white
 }
@@ -393,7 +393,7 @@ nav li a:active{
     content:"> ";
 }
 
-.aside-index a:hover{
+.aside-index a:hover, .aside-index a:active{
     color:#ffc107;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
 
@@ -525,7 +525,7 @@ nav li a:active{
         color: #ffff;
 }
 
-.contratar button:hover{
+.contratar button:hover, .contratar button:active{
     background-color:#ff77a9;
     color: white;
 }
@@ -776,7 +776,9 @@ font-size: 15px;
 }
 
 .form-buttons input[type=submit]:hover,
-.form-buttons input[type=reset]:hover{
+.form-buttons input[type=reset]:hover, 
+.form-buttons input[type=submit]:active,
+.form-buttons input[type=reset]:active{
     background-color:#ff77a9;
     color: white;
 }

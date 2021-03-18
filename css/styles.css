@@ -8,8 +8,17 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    flex-wrap: nowrap;
+}
+
+.navbar-brand{
+max-width: 200px;
+}
+
 .my-logo {
-    width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .my-logo:hover {
@@ -19,6 +28,7 @@
 .fa-bars {
     font-size: 2em;
     color:#ff77a9;
+    height:100%;
 }
 
 nav ul {

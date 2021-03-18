@@ -9,11 +9,7 @@
 }
 
 .my-logo {
-    width: 50px;
-    border-style: outset;
-    border-color: #f5f0e5;
-    border-width: 2px;
-    border-radius: 10px;
+    width: 300px;
 }
 
 .my-logo:hover {

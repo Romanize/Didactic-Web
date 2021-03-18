@@ -8,12 +8,8 @@
     box-sizing: border-box;
 }
 
-.navbar {
-    flex-wrap: nowrap;
-}
-
 .navbar-brand{
-max-width: 200px;
+max-width: 150px;
 }
 
 .my-logo {
@@ -890,6 +886,9 @@ font-size: 15px;
         display: none;
     }
 
+    .navbar-brand{
+        max-width: 200px;
+        }
 }
 
 @media (max-width: 991px) {

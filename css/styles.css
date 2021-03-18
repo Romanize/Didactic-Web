@@ -43,6 +43,10 @@ nav li a:hover{
     text-decoration: none
 }
 
+.activated {
+    color: #ff77a9
+}
+
 nav li a:active{
     color: #000051
 }
@@ -84,7 +88,7 @@ nav li a:active{
     background-size:contain;
     display: none;
     justify-content: center;
-    transform: scale(1.5) translateY(-30px)
+    transform: scale(1.5) translateY(-35px)
 }
 
 .agent div{
@@ -125,6 +129,7 @@ nav li a:active{
 .footer-content li{
     list-style: none;
     width: max-content;
+    padding-right: 10px
 }
 
 .footer-content li a{
@@ -152,6 +157,8 @@ nav li a:active{
 }
 
 .footer-contact {
+    padding: 1%;
+    margin: 5px 0 0 0;
     justify-content: center;
     text-align: center;
     color: #ff77a9;
@@ -241,7 +248,11 @@ nav li a:active{
 
 .main-index button:hover{
     background-color:#ff77a9;
-    color: black;
+    color: white
+}
+
+.main-index button:hover::after{
+    content: " >>";
 }
 
 .company-index{
@@ -251,8 +262,9 @@ nav li a:active{
 
 .company-index > p{
     text-align:center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 10px;
+    color:gray
 }
 
 .company-images{
@@ -281,6 +293,7 @@ nav li a:active{
     text-align:center;
     font-size: 2rem;
     margin-top: 10px;
+    color: gray;
 }
 
 #company-carousel img {
@@ -300,8 +313,11 @@ nav li a:active{
     border-style:groove;
     border-width: 0 0 2px 0;
     border-color: #ff77a9;
-    margin: 2rem 0;
-    /* look */
+    margin-top: 20px;
+}
+
+.news-index article:first-child{
+    margin: 0px
 }
 
 .news-index h2{
@@ -321,11 +337,7 @@ nav li a:active{
 }
 
 .news-index article button {
-    margin-bottom: 10px;
-    background-color: #ff77a9;
-}
-
-.news-index article button {
+    color: white;
     margin-bottom: 10px;
     background-color: #4eb5f1;
 }
@@ -333,8 +345,8 @@ nav li a:active{
 .news-index article button:hover {
     margin-bottom: 10px;
     background-color:#ff77a9;
+    color: white;
 }
-
 
 .news-index article button.btn.collapsed:before {
     content: 'Ver Más';
@@ -408,10 +420,10 @@ nav li a:active{
 .plan {
     background: linear-gradient(to top, #e5eaf5, whitesmoke);
     box-shadow: 5px 5px 10px gray;
+    transition: 0.5s;
 }
 
 .plan:hover {
-    border: #ff77a9 solid 1px;
     box-shadow: #ff77a9 5px 5px 20px ;
 }
 
@@ -425,7 +437,15 @@ nav li a:active{
 }
 
 .plan-info li {
-    margin: 15px 0
+    padding: 15px 0px;
+    border-top: solid 1px;
+    border-color:rgba(204, 204, 204, 0.829);
+    text-align: center;
+}
+
+.plan-info li:first-child {
+    border-top: 0px;
+    padding-top: 0px;
 }
 
 .popular {
@@ -435,7 +455,8 @@ nav li a:active{
 
 .precio {
     text-align: center;
-    margin-top: 30px;
+    margin: 20px 0px;
+    transition: 0.5s;
 }
 
 .precio .valor{
@@ -458,8 +479,30 @@ nav li a:active{
     color: white;
 }
 
-.precio div{
-    font-size:3rem;
+.precio div {
+    background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%)}
+
+.precio div {
+    margin: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+    font-size: 2rem;
+}
+
+.plan:hover > div div{
+    background-position: right center;
+    color: #fff;
+}
+
+.plan:hover > .precio {
+    transform: scale(1.05)
 }
 
 .contratar {
@@ -484,7 +527,7 @@ nav li a:active{
 
 .contratar button:hover{
     background-color:#ff77a9;
-    color: black;
+    color: white;
 }
 
 .main-services{
@@ -579,7 +622,6 @@ nav li a:active{
 .gallery div p{
     font-size: 1rem;
     margin-top: 20px;
-    display:none;
     text-align: center;
     transition: 2s;
     overflow: hidden;
@@ -590,7 +632,7 @@ nav li a:active{
     transform: scale(1.03)
 }
 
-.gallery img:hover + p{
+.gallery img:hover ~ p{
     display: inline-block;
     animation-name: Gallery-show;
     animation-duration: 1s;
@@ -602,6 +644,32 @@ nav li a:active{
     50%{height: 50%;}
     75%{height: 75%;}
     100%{height: auto;}
+}
+
+.gallery .more {
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+    background-color: #4eb5f1;
+    display: inline-block;
+    border-radius: 50px;
+    min-width: 30px;
+    padding: 0px 20px;
+    align-self: center;
+    color: white;
+}
+
+.gallery .more:hover {
+    background-color:#ff77a9;
+}
+
+.gallery .more.collapsed:before {
+    content: '+';
+    font-size: 1.5rem;
+}
+
+.gallery .more:before {
+    content: '-';
+    font-size: 1.5rem;
 }
 
 .main-review .flex-review-l{
@@ -643,7 +711,7 @@ nav li a:active{
     padding: 5px;
     border-radius: 30px;
     margin: 10px;
-    box-shadow: 5px 5px 10px gray
+    box-shadow: 5px 5px 10px gray;
 }
 
 /* Contact */
@@ -710,7 +778,7 @@ font-size: 15px;
 .form-buttons input[type=submit]:hover,
 .form-buttons input[type=reset]:hover{
     background-color:#ff77a9;
-    color: black;
+    color: white;
 }
 
 .contact-error {
@@ -796,6 +864,10 @@ font-size: 15px;
 
     .zona2, .zona3 {
         text-align: right; } 
+
+    .gallery .more {
+        display: none;
+    }
 }
 
 /* Pequeños dispositivos, cambian los elementos */
@@ -808,11 +880,12 @@ font-size: 15px;
     #company-carousel{
         display: none;
     }
+
 }
 
 @media (max-width: 991px) {
     .agent {
         background-position: bottom;
-        transform: scale(1.5) translateY(-32px)
+        transform: scale(1.5) translateY(-38px)
     }
 }

@@ -441,6 +441,7 @@ nav li a:active{
     border-top: solid 1px;
     border-color:rgba(204, 204, 204, 0.829);
     text-align: center;
+    list-style: none;
 }
 
 .plan-info li:first-child {

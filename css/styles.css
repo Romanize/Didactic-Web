@@ -123,7 +123,7 @@ nav li a:active{
     padding: 1%;
     justify-content: start;
     flex-direction: column;
-    height: 200px;
+    height: 220px;
     align-content: space-around;
 }
 
